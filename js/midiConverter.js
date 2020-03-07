@@ -4,7 +4,7 @@ WebMidi.enable(function () {
     //var input = WebMidi.inputs[0];
     var input = WebMidi.getInputByName("Network MacBook");
     //var output = WebMidi.outputs[1];
-    var ouput = WebMidi.getOutputByName("USB Uno MIDI Interface");
+    var output = WebMidi.getOutputByName("USB Uno MIDI Interface");
 	
 	  // Listen for a 'note on' message on channel 2
 	  input.addListener('noteon', 2,
