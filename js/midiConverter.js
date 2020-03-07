@@ -1,9 +1,11 @@
 WebMidi.enable(function () {
 
     // Retrieve an input by name, id or index
-    var input = WebMidi.inputs[0];
-    var output = WebMidi.outputs[0];
-
+    //var input = WebMidi.inputs[0];
+    var input = WebMidi.getInputByName("Network MacBook");
+    //var output = WebMidi.outputs[1];
+    var ouput = WebMidi.getOutputByName("USB Uno MIDI Interface");
+	
 	  // Listen for a 'note on' message on channel 2
 	  input.addListener('noteon', 2,
 	    function (e) {
